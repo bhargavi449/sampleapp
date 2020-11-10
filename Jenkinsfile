@@ -11,7 +11,7 @@ pipeline {
 
       stage("test") {
           steps {
-             sh 'sudo mkdir /app'
+             
               echo 'tested completed succesfully'
               echo 'testedddd'
           }
