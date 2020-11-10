@@ -3,6 +3,7 @@ pipeline {
    stages {
       stage("build") {
           steps {
+              sh 'ls -ltr'
               echo 'build completed succesfully'
               echo 'built succesfully'
           }
@@ -10,6 +11,7 @@ pipeline {
 
       stage("test") {
           steps {
+             sh 'sudo mkdir /app'
               echo 'tested completed succesfully'
               echo 'testedddd'
           }
