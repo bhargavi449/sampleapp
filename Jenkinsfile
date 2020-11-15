@@ -4,7 +4,6 @@ pipeline {
       stage("build") {
           steps {
               sh 'ls -ltr'
-              sh 'df -h'
               echo 'build completed succesfully'
               echo 'built succesfully'
           }
